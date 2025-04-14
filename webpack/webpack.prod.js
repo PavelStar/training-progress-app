@@ -4,6 +4,7 @@ const CssMinimizerPlugin = require("css-minimizer-webpack-plugin");
 const TerserPlugin = require("terser-webpack-plugin");
 const getCommonConfig = require("./webpack.common.js");
 const path = require("path");
+const webpack = require("webpack");
 
 module.exports = merge(getCommonConfig(MiniCssExtractPlugin.loader), {
   mode: "production",
@@ -13,6 +14,9 @@ module.exports = merge(getCommonConfig(MiniCssExtractPlugin.loader), {
     clean: true,
   },
   plugins: [
+    new webpack.DefinePlugin({
+      "process.env.NODE_ENV": JSON.stringify("production"),
+    }),
     new MiniCssExtractPlugin({
       filename: "styles.[contenthash].css",
     }),

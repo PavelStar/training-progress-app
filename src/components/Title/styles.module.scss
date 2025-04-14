@@ -1,0 +1,25 @@
+@use "@styles/fonts.scss";
+@use "@styles/variables/colors.scss";
+@use "@styles/mixins/media.scss";
+
+.title {
+  font-family: var(--font-heading);
+  color: colors.$color-primary;
+  // color: red;
+
+  &__theme {
+    &_light {
+    }
+    &_dark {
+    }
+  }
+
+  &__size {
+    &_large {
+    }
+    &_medium {
+    }
+    &_small {
+    }
+  }
+}

@@ -1,7 +1,13 @@
 import styles from "./App.module.scss";
+import { Title, Section } from "@components";
 
 const App = () => {
-  return <div className={styles["wrapper"]}>Приложение запущено 🎉</div>;
+  return (
+    <div>
+      <Section>фыавы</Section>
+      <Title>sdfdsf</Title>
+    </div>
+  );
 };
 
 export default App;
