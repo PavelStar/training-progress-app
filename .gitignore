@@ -1,0 +1,13 @@
+# dependencies
+/node_modules
+/dist
+
+# builds
+*.log
+
+# editor
+.vscode
+.DS_Store
+
+# typescript cache
+*.tsbuildinfo
