@@ -18,7 +18,8 @@
       "@styles": ["./styles/index"],
       "@types/*": ["./types/*"],
       "@utils/*": ["./utils/*"],
-      "@assets/*": ["./assets/*"]
+      "@assets/*": ["./assets/*"],
+      "@pages": ["./pages/index"]
     }
   },
   "include": ["src", "types"]

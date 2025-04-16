@@ -5,3 +5,4 @@ declare module "@styles/*";
 declare module "@types/*";
 declare module "@utils/*";
 declare module "@assets/*";
+declare module "@pages/*";
